@@ -3,6 +3,7 @@ import './App.css';
 import Comment from './Comment';
 import CommentListDetail from './commentListDetails'
 import Utils from './beingExtra';
+import AddComment from './AddComment';
 
 class App extends Component {
   render() {
@@ -11,6 +12,9 @@ class App extends Component {
           <Comment 
             name="John Smith"
           />
+          <AddComment/>
+          <CommentListDetail/>
+          <Utils/>
         </div>
     );
   }

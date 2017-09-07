@@ -31,7 +31,7 @@ class CommentListDetail extends Component {
 		let commentBox;
 		if(this.state.edit) {
 			commentBox = (
-			<div className = "panel panel-default row" id = {comment.id}>
+			<div className = "default row" id = {comment.id}>
 				<div className = "panel-body">
 					<textarea className = {`form-control ${this.state.invalidClass}`} rows = "2" onChange = {(event) => comment.text = event.target.value} defaultValue = {comment.text}></textarea>
 				</div>
@@ -39,11 +39,12 @@ class CommentListDetail extends Component {
 					<span className = "comment-name"> {comment.name} </span>
 					<span className = "comment-done pull-right" onClick = {this.onClickDone}>Done</span>
 				</div>
-			</div>)
+			</div>
+			)
 		}
 		else {
 			commentBox = (
-			<div className = "panel panel-default row comment-box" onClick = {this.onClickBox} id = {comment.id}>
+			<div className = "comment-box" onClick = {this.onClickBox} id = {comment.id}>
 				<div className = "panel-body">
 					{comment.text}
 				</div>

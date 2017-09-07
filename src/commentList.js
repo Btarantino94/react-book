@@ -26,7 +26,7 @@ class CommentList extends Component {
 	render() {
 		let that = this;
 		let commentList = this.props.comments.map (function(comment, i) {
-			return <CommentListDetail key={i} comment = {comment} highLightBox = {that.highLightBox}/>
+			return <CommentListDetail key={i} comment = {comment} highLightBox = />
 		})
 
 		return (
@@ -35,17 +35,17 @@ class CommentList extends Component {
 	}
 }
 
-/*const CommentList = ({comments}) => {
-	let prevId = '';
-	if(!comments.length) {
-		return <div></div>
-	}
-	let commentList = comments.map (function(comment, i) {
-		return <CommentListDetail key={i} comment = {comment} />
-	})
-	return (
-		<div className = "comment-list"> {commentList} </div>
-	);
-}*/
+// const CommentList = ({comments}) => {
+// 	let prevId = '';
+// 	if(!comments.length) {
+// 		return <div></div>
+// 	}
+// 	let commentList = comments.map (function(comment, i) {
+// 		return <CommentListDetail key={i} comment = {comment} />
+// 	})
+// 	return (
+// 		<div className = "comment-list"> {commentList} </div>
+// 	);
+// }
 
 export default CommentList;

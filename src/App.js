@@ -10,6 +10,8 @@ import './App.css';
       //basically super gives you access to state.
       super();
       //.bind changes what "this" is referencing.
+      // When you bind functions to events, your input variables 
+      //will be called first and then you will get whatever the API of the event is defined to return.
         this.HandleComment = this.HandleComment.bind(this);
         this.PostComment = this.PostComment.bind(this);
         this.DeleteComment = this.DeleteComment.bind(this);
@@ -38,7 +40,7 @@ import './App.css';
   PostComment(){
     let nuevoComment = this.state.userComment;
       if (nuevoComment === ''){
-        alert("Your comment is empty!")
+        alert("Your comment is empty.")
           return;
           }
             let newComment = {

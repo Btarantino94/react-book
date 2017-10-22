@@ -1,7 +1,8 @@
 {
-  "name": "react-book",
+  "name": "space-book",
   "version": "0.1.0",
   "private": true,
+"Homepage": "http://btarantino.road2hire.ninja/space-book",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
